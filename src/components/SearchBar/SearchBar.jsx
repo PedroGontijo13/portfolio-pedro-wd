@@ -4,7 +4,6 @@ import { BiSearch } from "react-icons/bi";
 import ThemeContext from "../../context/ThemeContext";
 
 const SearchBarWrapper = styled.div`
-  position: relative;
   width: 100%;
   height: 64px;
   background-color: ${props => props.theme === "light" ? "#333" : "#fff"};

@@ -20,6 +20,7 @@ const SnippetCardWrapper = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
+    padding: 1rem 2rem;
   }
 `;
 
@@ -71,8 +72,8 @@ const SnippetCard = ({
       </SnippetCardTop>
       <SnippetCardBottom>
         <div className="snippet-bottom-logos">
-          {language && language.map(item => {
-            return <Tag theme={theme}>{item}</Tag>
+          {language && language.map((item, index) => {
+            return <Tag key={index} theme={theme}>{item}</Tag>
           })}
         </div>
         <div>

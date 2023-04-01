@@ -4,7 +4,9 @@ import arrow from "../../assets/arrow.svg";
 
 const ProjectHeadingWrapper = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 80px 0px;
   h2 {
     width: 458px;
     height: 119px;
@@ -19,12 +21,12 @@ const ProjectHeadingWrapper = styled.div`
       width: 100%;
       font-size: 48px;
       line-height: 48px;
-      br{
+      br {
         display: none;
       }
     }
   }
-  img{
+  img {
   }
 `;
 

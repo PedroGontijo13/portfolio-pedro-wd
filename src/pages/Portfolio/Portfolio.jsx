@@ -8,20 +8,13 @@ const PortfolioContainer = styled.div`
   padding: 2rem 0;
   background-color: ${(props) => (props.theme === "light" ? "#fff" : "#333")};
   color: ${(props) => (props.theme === "light" ? "#333" : "#fff")};
-  .inner {
-    width: 1140px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-  }
 `;
 
 const Portfolio = () => {
   const { theme } = useContext(ThemeContext);
   return (
-    <PortfolioContainer theme={theme}>
-      <div className="inner">
+    <div className="flex">
+      <PortfolioContainer theme={theme}>
         <ProjectHeading />
         <ProjectCard
           type={"Web Development"}
@@ -31,8 +24,8 @@ const Portfolio = () => {
           }
           image={ProjectImg}
         />
-      </div>
-    </PortfolioContainer>
+      </PortfolioContainer>
+    </div>
   );
 };
 
