@@ -68,7 +68,7 @@ const NavContainer = styled.nav`
     color: ${(props) => (props.theme === "light" ? "#fff" : "#333")};
     @media (max-width: 768px) {
       margin-left: auto;
-      margin: 0;
+      margin: 1rem;
     }
   }
 `;
