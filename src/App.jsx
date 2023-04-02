@@ -8,6 +8,7 @@ import Home from './pages/Home/Home';
 import Snippet from './pages/Snippet/Snippet';
 import Portfolio from './pages/Portfolio/Portfolio';
 import axios from 'axios';
+import MentorShip from './pages/Mentorship/Mentorship';
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -38,6 +39,7 @@ function App() {
               <Route index element={<Home repositories={repositories} />} />
               <Route path='/snippet' element={<Snippet repositories={repositories} />} />
               <Route path='/portfolio' element={<Portfolio />} />
+              <Route path='/mentorship' element={<MentorShip/>} />
           </Routes>
           <Footer />
         </BrowserRouter>

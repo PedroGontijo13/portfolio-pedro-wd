@@ -96,6 +96,9 @@ const Nav = () => {
           <li>
             <Link to={"/portfolio"}>Portfolio</Link>
           </li>
+          <li>
+            <Link to={"/mentorship"}>Mentorship</Link>
+          </li>
           <button onClick={toggleTheme}>
             {theme === "light" ? "Dark" : "Light"}
           </button>
