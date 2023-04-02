@@ -21,7 +21,7 @@ const MentorShipContainer = styled.div`
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 25px;
     line-height: 32px;
     /* or 178% */
 
