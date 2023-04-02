@@ -2,14 +2,24 @@ import React from "react";
 import styled from "styled-components";
 import MentorShipCard from "../Card/MentorShipCard/MentorShipCard";
 import SeeMoreButton from "../Button/SeeMoreButton/SeeMoreButton";
+import SkillCard from "../Card/SkillCard/SkillCard";
+import img1 from "../../assets/imgMentorship.png";
+import MentorShipCard2 from "../Card/MentorShipCard2/MentorShipCard2";
 const ProjectSectionWrapper = styled.div`
   @media (max-width: 768px) {
   }
-  margin: 50px 0;
   .center {
     display: fle;
     justify-content: center;
     align-itens: center;
+  }
+
+  h1 {
+    margin: 30px 0;
+  }
+
+  .margin-top {
+    margin-top: 50px;
   }
 
   .w-50 {
@@ -23,15 +33,30 @@ const MentorShipSection = () => {
   return (
     <ProjectSectionWrapper>
       <div className="w-50">
-        <h1 className="center">MentorShip</h1>
-        <p>
-          Menghabiskan banyak waktu untuk belajar <span> sendiri </span>dan
-          tetap merasa stuck?
-        </p>
-        <p>
-          Mentorship Frontend ini menjadi jawaban atas permasalahanmu. Karena
-          disini, kamu bakal merasakan mentoring yang lebih personal
-        </p>
+        <h1 style={{ textAlign: "center" }} className="center">
+          Pedro Mentorship
+        </h1>
+      </div>
+      <div className="center margin-top">
+        <MentorShipCard2
+          icon={img1}
+          title="Mentorship 1 : 1"
+          content="Video Call 1 : 1 dengan mentor untuk berdiskusi, bertanya dan konsultasi seputar mentorship frontend atau hal lainnya"
+        />
+      </div>
+      <div className="center margin-top">
+        <MentorShipCard2
+          icon={img1}
+          title="Terarah"
+          content="Video Call 1 : 1 dengan mentor untuk berdiskusi, bertanya dan konsultasi seputar mentorship frontend atau hal lainnya"
+        />
+      </div>
+      <div className="center margin-top">
+        <MentorShipCard2
+          icon={img1}
+          title="Mentorship 1 : 1"
+          content="Video Call 1 : 1 dengan mentor untuk berdiskusi, bertanya dan konsultasi seputar mentorship frontend atau hal lainnya"
+        />
       </div>
     </ProjectSectionWrapper>
   );
