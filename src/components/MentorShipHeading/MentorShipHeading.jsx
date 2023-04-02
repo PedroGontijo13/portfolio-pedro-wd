@@ -1,15 +1,22 @@
 import React from "react";
 import styled from "styled-components";
 import MentorShipCard from "../Card/MentorShipCard/MentorShipCard";
-import SeeMoreButton from "../Button/SeeMoreButton/SeeMoreButton";
 const ProjectHeadingWrapper = styled.div`
   @media (max-width: 768px) {
   }
 
   .center {
     display: flex;
-    justify-content: center;
-    align-itens: center;
+    align-items: center;
+    justify-content: center 
+  }
+
+  .MobileCenter {
+    @media (max-width: 768px) {
+      display: flex;
+      justify-content: center;
+      align-itens: center;
+    }
   }
 
   .w-50 {
@@ -29,16 +36,10 @@ const ProjectHeadingWrapper = styled.div`
   }
 `;
 
-const ButtonArea = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-top: 15px;
-`;
-
 const MentorShipHeading = () => {
   return (
     <ProjectHeadingWrapper>
-      <h1 className="center">MentorShip</h1>
+      <h1 className="MobileCenter center">MentorShip</h1>
       <div className="mentorArea">
         <div className="w-50 margin10">
           <p>
@@ -54,9 +55,6 @@ const MentorShipHeading = () => {
           <MentorShipCard />
         </div>
       </div>
-      <ButtonArea clasname="button-area center">
-        <SeeMoreButton />
-      </ButtonArea>
     </ProjectHeadingWrapper>
   );
 };

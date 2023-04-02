@@ -4,8 +4,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #333;
+  color: var(--text-color);
+  background-color: var(--background-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -17,17 +17,29 @@
   margin: 0 auto;
 }
 
+/* Define the variables for the light theme */
+:root[data-theme="light"] {
+  --text-color: rgba(255, 255, 255, 0.87);
+  --background-color: #333;
+}
+
+/* Define the variables for the dark theme */
+:root[data-theme="dark"] {
+  --text-color: #333;
+  --background-color: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-.container{
+.container {
   /* border: 1px solid black;
   width: 1140px;
   margin: 0 auto; */

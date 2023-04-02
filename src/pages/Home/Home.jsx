@@ -9,6 +9,7 @@ const HomeContainer = styled.div`
   padding: 1rem 2rem;
   background-color: ${(props) => (props.theme === "light" ? "#fff" : "#333")};
   color: ${(props) => (props.theme === "light" ? "#333" : "#fff")};
+  
   .inner {
     margin: 0 auto;
   }

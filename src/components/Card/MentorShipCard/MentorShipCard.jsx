@@ -1,12 +1,14 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import ThemeContext from "../../../context/ThemeContext";
-import icon from "../../../assets/emoji.png";
+import SeeMoreButton from "../../Button/SeeMoreButton/SeeMoreButton";
+import icon from "../../../assets/emoji4.png";
+import icon2 from "../../../assets/emoji2.png";
+import icon3 from "../../../assets/emoji3.png";
 const MentorShipCardWrapper = styled.div`
   position: relative;
   width: 100%;
   height: auto;
-
   background: ${(props) => (props.theme === "light" ? "#333" : "#fff")};
   color: ${(props) => (props.theme === "light" ? "#fff" : "#333")};
   border-radius: 12px;
@@ -42,6 +44,8 @@ const MentorShipCardWrapper = styled.div`
   }
 
   .row-area {
+    display: inline-block;
+    vertical-align: top;
     margin: 20px;
   }
 
@@ -61,37 +65,51 @@ const MentorShipCardWrapper = styled.div`
   }
 `;
 
+const ButtonArea = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+`;
+
+const Margin20 = styled.div`
+  margin: 20px 0;
+`;
+
 const MentorShipCard = () => {
   const { theme } = useContext(ThemeContext);
   return (
-    <MentorShipCardWrapper theme={theme}>
-      <div className="row-area">
-        <div className="flex margin10">
-          <img className="center" src={icon} />
-          <h6>Minggu Pertama</h6>
+    <Margin20>
+      <MentorShipCardWrapper theme={theme}>
+        <div className="row-area">
+          <div className="flex margin10">
+            <img className="center" src={icon} />
+            <h6>Minggu Pertama</h6>
+          </div>
+          <small>
+            Membahas dasar dari website seperti tag atribut dan element.{" "}
+          </small>
         </div>
-        <small>
-          Membahas dasar dari website seperti tag atribut dan element.{" "}
-        </small>
-      </div>
-      <div className="row-area">
-        <div className="flex">
-          <img className="center" src={icon} />
-          <h6>Minggu Kedua</h6>
+        <div className="row-area">
+          <div className="flex">
+            <img className="center" src={icon2} />
+            <h6>Minggu Kedua</h6>
+          </div>
+          <small>Membahas seputar Pengembangan website - SDLC dasar.</small>
         </div>
-        <small>Membahas seputar Pengembangan website - SDLC dasar.</small>
-      </div>
-      <div className="row-area">
-        <div className="flex">
-          <img className="center" src={icon} />
-          <h6>Minggu Ketiga</h6>
+        <div className="row-area">
+          <div className="flex">
+            <img className="center" src={icon3} />
+            <h6>Minggu Ketiga</h6>
+          </div>
+          <small>
+            Membahas seputar konsep layouting seperti flexbox dan grid.
+          </small>
         </div>
-        <small>
-          Membahas seputar konsep layouting seperti flexbox dan grid.
-        </small>
-      </div>
-    </MentorShipCardWrapper>
+      </MentorShipCardWrapper>
+      <ButtonArea clasname="button-area center">
+        <SeeMoreButton />
+      </ButtonArea>
+    </Margin20>
   );
 };
-
 export default MentorShipCard;
