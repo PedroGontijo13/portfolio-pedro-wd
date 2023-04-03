@@ -54,6 +54,7 @@ const MentorShipCardWrapper = styled.div`
   }
 
   small {
+    margin: 20px;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -73,6 +74,7 @@ const ButtonArea = styled.div`
 
 const Margin20 = styled.div`
   margin: 20px 0;
+  padding: 20px;
 `;
 
 const MentorShipCard = () => {
