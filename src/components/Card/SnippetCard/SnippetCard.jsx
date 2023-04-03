@@ -7,7 +7,6 @@ import axios from "axios";
 import { AiFillStar } from "react-icons/ai";
 
 const SnippetCardWrapper = styled.div`
-  width: 556px;
   height: 282px;
   border-radius: 20px;
   text-align: left;
