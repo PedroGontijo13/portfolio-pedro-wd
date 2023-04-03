@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import img1 from "../../assets/imgMentorship.png";
+import img2 from "../../assets/imgMentorship2.png";
+import img3 from "../../assets/imgMentorship3.png";
 import MentorShipCard2 from "../Card/MentorShipCard2/MentorShipCard2";
 const ProjectSectionWrapper = styled.div`
   @media (max-width: 768px) {
@@ -43,14 +45,14 @@ const MentorShipSection = () => {
       </div>
       <div className="center margin-top">
         <MentorShipCard2
-          icon={img1}
+          icon={img2}
           title="Terarah"
           content="Video Call 1 : 1 dengan mentor untuk berdiskusi, bertanya dan konsultasi seputar mentorship frontend atau hal lainnya"
         />
       </div>
       <div className="center margin-top">
         <MentorShipCard2
-          icon={img1}
+          icon={img3}
           title="Mentorship 1 : 1"
           content="Video Call 1 : 1 dengan mentor untuk berdiskusi, bertanya dan konsultasi seputar mentorship frontend atau hal lainnya"
         />

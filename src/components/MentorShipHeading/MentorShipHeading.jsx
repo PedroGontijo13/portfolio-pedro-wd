@@ -22,7 +22,7 @@ const ProjectHeadingWrapper = styled.div`
   .w-50 {
     width: 50%;
     @media (max-width: 768px) {
-      width: 100%;
+      width: 0%;
     }
   }
   .mentorArea {

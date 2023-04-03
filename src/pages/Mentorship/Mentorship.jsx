@@ -1,9 +1,6 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import ThemeContext from "../../context/ThemeContext";
-import Hero from "../../components/Hero/Hero";
-import ProjectSection from "../../components/ProjectSection/ProjectSection";
-import SnippetSection from "../../components/SnippetSection/SnippetSection";
 import MentorShipHeading from "../../components/MentorShipHeading/MentorShipHeading";
 import MentorShipSection from "../../components/MentorShipSection/MentorShipSection";
 
